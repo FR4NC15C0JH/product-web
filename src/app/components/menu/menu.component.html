@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <mat-icon>shopping_cart</mat-icon>  
+        <!--menu produto-->
+        <button mat-button [matMenuTriggerFor]="menuProduto"><strong>Produto</strong></button>
+        <mat-menu #menuProduto="matMenu">
+          <button mat-menu-item>Listar</button>
+          <button mat-menu-item>Cadastrar/Editar</button>
+          <button mat-menu-item>Vizualizar</button>
+        </mat-menu> <!--end menu produto-->
+        <!-- menu cliente-->
+        <button mat-button [matMenuTriggerFor]="menuCliente"><strong>Cliente</strong></button>
+        <mat-menu #menuCliente="matMenu">
+          <button mat-menu-item>Listar</button>
+          <button mat-menu-item>Cadastrar/Editar</button>
+          <button mat-menu-item>Vizualizar</button>
+        </mat-menu><!--end menu cliente-->
+        <!--menu pedido-->
+        <button mat-button [matMenuTriggerFor]="menuPedido"><strong>Pedido</strong></button>
+        <mat-menu #menuPedido="matMenu">
+          <button mat-menu-item>Listar</button>
+          <button mat-menu-item>Cadastrar/Editar</button>
+          <button mat-menu-item>Vizualizar</button>
+        </mat-menu><!--end menu pedido-->
+        <!--login space-->
+        <span class="spacer"></span>      
+        <span class="mat-small"> example@gmail.com</span>
+        <button mat-button><mat-icon class="login-space">input</mat-icon></button>
+        <!-- end login space-->
+    </mat-toolbar-row>
+</mat-toolbar>
+  
