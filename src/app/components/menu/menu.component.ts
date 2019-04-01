@@ -8,14 +8,13 @@ import { MatMenuTrigger } from '@angular/material/menu';
 })
 export class MenuComponent implements OnInit {
 
-  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+  // @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
-  someMethod() {
-    this.trigger.openMenu();
-  }
+  // someMethod() {
+  //   this.trigger.openMenu();
+  // }
 
-  constructor() { 
-  }
+  constructor() { }
 
   ngOnInit() {
   }

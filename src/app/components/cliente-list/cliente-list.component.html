@@ -1,0 +1,23 @@
+<div class="center">
+  <mat-card>    
+      <mat-card-header>
+        <mat-card-title>Lista de Clientes</mat-card-title>    
+      </mat-card-header> 
+      
+      <div [ngClass]="classCss" role="alert" *ngIf="message">
+          <strong>{{ message.text }}</strong>
+      </div>
+
+      <mat-card-content>
+        <mat-selection-list #clienteSelected>
+          <mat-list-option *ngFor="let cliente of clientes">
+            {{cliente.razaoSocial}}
+          </mat-list-option>
+        </mat-selection-list>
+      
+        <p>
+          Quantidade de opções selecionadas: {{clienteSelected.selectedOptions.selected.length}}
+        </p>
+      </mat-card-content>
+  </mat-card>    
+</div>

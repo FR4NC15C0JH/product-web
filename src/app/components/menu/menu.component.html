@@ -11,8 +11,8 @@
         <!-- menu cliente-->
         <button mat-button [matMenuTriggerFor]="menuCliente"><strong>Cliente</strong></button>
         <mat-menu #menuCliente="matMenu">
-          <button mat-menu-item>Listar</button>
-          <button mat-menu-item>Cadastrar/Editar</button>
+          <button mat-menu-item [routerLink]="['/cliente-list']">Listar</button>
+          <button mat-menu-item [routerLink]="['/cliente-new']">Cadastrar/Editar</button>
           <button mat-menu-item>Vizualizar</button>
         </mat-menu><!--end menu cliente-->
         <!--menu pedido-->
